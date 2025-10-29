@@ -1,16 +1,25 @@
 React is a labarary. 
 React is not a framwork.
 JSX : JavaScript XML.
-
-
-
-
-
-
-
-
-
 rconst
+
+
+
+
+⚙️ React ka main kaam
+React ka main kaam hai:
+“Page ko fast aur dynamic banana bina pura page reload kiye.”
+Jaise:
+Agar tum Instagram pe like button dabate ho, to sirf like count change hota hai, pura page reload nahi hota.
+Ye React ka kaam hai.
+
+
+
+
+
+
+
+
 
 
 
