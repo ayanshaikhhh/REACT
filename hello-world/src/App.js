@@ -14,7 +14,8 @@ import Stylesheet from './components/Stylesheet.js';
 import Inline from './components/Inline.js';
 import './appStyles.css'
 import styles from './appStyles.module.css'
-
+import Form from './components/Form.js';
+import Lifecycle from './components/Lifecycle.js'
 
 
 
@@ -57,7 +58,7 @@ function App() {
 
 
 {/* <NameList/> */}
-
+{/* 
         <Stylesheet primary={true}/>
 
         <h1 className='error'>error</h1>
@@ -65,9 +66,13 @@ function App() {
 
 <Inline/>
 
+ */}
 
 
+        {/* // <Form/> */}
 
+
+<Lifecycle/>
 
 
 

@@ -19,7 +19,10 @@ Ye React ka kaam hai.
 
 
 
-
+⚛️ Component Mounting Lifecycle (React me Component jab load hota hai)
+Mounting phase ka matlab hota hai —
+jab React koi component ko create karta hai aur screen (DOM) me insert karta hai.
+Jab component first time load hota hai, tab React kuch specific functions (lifecycle methods) ko ek order me call karta hai 👇
 
 
 
