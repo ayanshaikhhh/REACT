@@ -14,8 +14,24 @@ import Stylesheet from './components/Stylesheet.js';
 import Inline from './components/Inline.js';
 import './appStyles.css'
 import styles from './appStyles.module.css'
-import Form from './components/Form.js';
+import Form from './components/Form.js'
 import Lifecycle from './components/Lifecycle.js'
+import FragmentDemo from './components/FragmentDemo.js';
+import Table from './components/Table.js'
+import PureComp from '../src/components/PureComp.js'
+import ParentComp from './components/ParentComp.js'
+import RefsDemo from './components/RefsDemo.js';
+import FocusInput from './components/FocusInput.js';
+import FRParentInput from './components/FRParentInput.js'
+import PortalDemo from './components/PortalDemo.js'
+import Hero from './components/Hero.js'
+import ErrorBoundary from './components/ErrorBoundary.js';
+import ClickCounter from './components/ClickCounter.js'
+import HoverCounter from './components/HoverCounter.js';
+import ClickCounterTwo from './components/ClickCounterTwo.js';
+import HoverCounterTwo from './components/HoverCounterTwo.js';
+import User from './components/User.js';
+
 
 
 
@@ -72,7 +88,53 @@ function App() {
         {/* // <Form/> */}
 
 
-<Lifecycle/>
+{/* <Lifecycle/> */}
+
+
+{/* <FragmentDemo/> */}
+{/* <Table/> */}
+
+
+{/* <PureComp/> */}
+
+{/* <ParentComp/> */}
+
+{/* <RefsDemo/> */}
+{/* <FocusInput/> */}
+
+{/* <FRParentInput/> */}
+
+
+{/* <PortalDemo/> */}
+
+{/* 
+<ErrorBoundary>
+            <Hero heroName='batman'/>
+</ErrorBoundary>
+
+<ErrorBoundary>
+
+            <Hero heroName='superman'/>
+</ErrorBoundary>
+
+<ErrorBoundary>
+
+            <Hero heroName='joker'/>
+</ErrorBoundary> */}
+
+
+{/* <ClickCounter name='vishwas'/> */}
+{/* <HoverCounter/> */}
+
+{/* <ClickCounterTwo/> */}
+{/* <HoverCounterTwo/> */}
+
+{/* <User render={(isLoggedIn) =>isLoggedIn ? 'vishwas' : 'guest'}/> */}
+
+<Counter2 render={(count, incrementCount) => (<ClickCounterTwo count={count} incrementCount={incrementCount}></ClickCounterTwo> )}/>
+
+
+
 
 
 

@@ -3,3 +3,18 @@ rconst
 rfce
 
 
+rce = components create
+
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+🔹 Common React Snippet Shortcuts (VS Code Extension se)
+| Shortcut | Meaning                               | Code Generate karta hai                       |
+| -------- | ------------------------------------- | --------------------------------------------- |
+| `rfc`    | React Functional Component            | Functional component (without export default) |
+| `rfce`   | React Functional Component Export     | Functional component with `export default`    |
+| `rce`    | React Class Component Export          | Class component with `export default`         |
+| `rcc`    | React Class Component                 | Class component (without export default)      |
+| `rafce`  | React Arrow Function Component Export | Arrow function style functional component     |

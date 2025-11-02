@@ -3,6 +3,7 @@ React is not a framwork.
 JSX : JavaScript XML.
 rconst
 
+--------------------------------------------------------------------------------------------------------------------
 
 
 
@@ -16,6 +17,7 @@ Ye React ka kaam hai.
 
 
 
+--------------------------------------------------------------------------------------------------------------------
 
 
 
@@ -27,15 +29,22 @@ Jab component first time load hota hai, tab React kuch specific functions (lifec
 
 
 
+--------------------------------------------------------------------------------------------------------------------
 
 
 
+Render Props in React ek React pattern hai jisme ek component function ko prop ke रूप में accept karta hai, aur us function ko use karke dynamic UI render karta hai.
+Ye technique components ke beech code reuse karne ke liye use hoti hai — jaise higher order components (HOC) karte hain, lekin ek alag approach ke sath.
 
 
+🔹 Definition:
+Render Props ka matlab hai — ek aisa prop jiska value function hota hai, aur ye function React element return karta hai.
 
 
-
-
+🔹 Advantages:
+✅ Code Reusability (logic share kar sakte ho without duplication)
+✅ Flexibility (UI control parent component ke paas hota hai)
+✅ Cleaner separation of logic and presentation
 
 
 
