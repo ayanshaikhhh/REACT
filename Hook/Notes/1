@@ -1,0 +1,53 @@
+🔹 Hooks kya hote hain?
+Hooks basically functions hote hain jo React ke features ko directly access karne dete hain jaise:
+state (useState)
+lifecycle methods (useEffect)
+context (useContext)
+ref (useRef)
+aur bhi custom hooks
+
+
+
+
+⚡ Important Points:
+useState ek hi value handle karta hai (string, number, object, array, etc.).
+Agar tum multiple values chahte ho, to multiple useState() calls kar sakte ho.
+State update asynchronous hota hai (thoda delay ho sakta hai).
+React automatically UI ko re-render karta hai jab state change hoti hai.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
