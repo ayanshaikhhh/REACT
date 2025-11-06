@@ -13,13 +13,35 @@ import MouseContainer from './components/MouseContainer';
 import IntervalClassCounter from './components/IntervalClassCounter';
 import IntervalHookCounter from './components/IntervalHookCounter';
 import DataFectching from './components/DataFectching';
+import ComponentC from './components/ComponentC';
+import ComponentF from './components/ComponentF';
+import CounterOne from './components/CounterOne';
+import DataFetchingOne from './components/DataFetchingOne';
+import DataFetchingTwo from './components/DataFetchingTwo';
 
+
+
+
+
+// export const userContext = React.createContext()
+// export const channelContext = React.createContext()
 
 
 function App() {
   return (
     <div className="App">
         <div className='App'>
+
+
+
+
+          {/* <userContext.Provider value={'Vishwas'}>
+            <channelContext.Provider value={'Codevolution'}>
+              <ComponentC/>
+            </channelContext.Provider>
+          </userContext.Provider> */}
+
+
 
 
 
@@ -39,7 +61,11 @@ function App() {
           {/* <MouseContainer/> */}
           {/* <IntervalClassCounter/> */}
           {/* <IntervalHookCounter/> */}
-          <DataFectching/>
+          {/* <DataFectching/> */}
+          {/* <ComponentF/> */}
+          {/* <CounterOne/> */}
+          {/* <DataFetchingOne/> */}
+          <DataFetchingTwo/>
        
        
 
