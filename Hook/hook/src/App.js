@@ -18,6 +18,7 @@ import ComponentF from './components/ComponentF';
 import CounterOne from './components/CounterOne';
 import DataFetchingOne from './components/DataFetchingOne';
 import DataFetchingTwo from './components/DataFetchingTwo';
+import FocusInput from './components/FocusInput';
 
 
 
@@ -65,7 +66,8 @@ function App() {
           {/* <ComponentF/> */}
           {/* <CounterOne/> */}
           {/* <DataFetchingOne/> */}
-          <DataFetchingTwo/>
+          {/* <DataFetchingTwo/> */}
+          <FocusInput/>
        
        
 
