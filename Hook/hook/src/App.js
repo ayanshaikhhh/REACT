@@ -67,7 +67,8 @@ function App() {
           {/* <CounterOne/> */}
           {/* <DataFetchingOne/> */}
           {/* <DataFetchingTwo/> */}
-          <FocusInput/>
+          {/* <FocusInput/> */}
+          
        
        
 
