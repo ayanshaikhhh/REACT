@@ -1,0 +1,29 @@
+🔹 Hooks kya hote hain?
+Hooks basically functions hote hain jo React ke features ko directly access karne dete hain jaise:
+state (useState)
+lifecycle methods (useEffect)
+context (useContext)
+ref (useRef)
+aur bhi custom hooks
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

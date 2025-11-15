@@ -1,0 +1,227 @@
+/* .App {
+  text-align: center;
+} 
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+ */
+
+
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------- */
+/* 
+body {
+  background-color: rgb(27, 27, 60);
+}
+h2{
+  font-size: 36px;
+  color: white;
+  font-weight: bold;
+}
+
+.container{
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 18px;
+  min-height: 500px;
+  padding-top: 20px;
+  border-radius: 15px;
+  background-color: #783995;
+}
+
+.list{
+  text-align: left;
+}
+
+.list ul{
+  padding-left: 0;
+}
+
+.list ul li{
+  background-color: #a474b9;
+  color: white;
+  padding: 8px;
+  margin-top: 12px;
+  list-style: none;
+  padding: 10px;
+  font-size: 26px;
+}
+
+
+.list-item{
+  background-color: #f4f4f4;
+  margin: 5px 0;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+} 
+
+span{
+  float: right;
+  cursor: pointer;
+  /* padding: 8px; */
+  /* margin: 0 15px; */
+  /* font-size: 34px; */
+  
+/* }
+
+input{
+  padding: 10px;
+  font-size: 18px;
+  width: 60%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-right: 5px;
+}
+
+input:focus{
+  outline: none;
+  border-color: #8D3Daf;
+  box-shadow: 0 0 5px rgba(141, 61, 175, 0.5);
+}
+
+button{
+  padding: 10px 15px;
+  font-size: 18px;
+  background-color: #8D3Daf;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 0 5px;
+}  */
+
+
+
+
+
+
+
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+.App {
+  text-align: center;
+}
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+body {
+  background-color: #1a1a2e; 
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  margin-top: 40px;
+}
+
+h2 {
+  font-size: 36px;
+  color: white;
+  font-weight: 700;
+  text-align: center;
+}
+
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+  min-height: 500px;
+  background-color: #1F1F3D; 
+  border-radius: 20px;
+  padding: 30px; 
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); 
+}
+
+
+input {
+  padding: 14px;
+  font-size: 16px;
+  width: 70%; 
+  border: none;
+  border-radius: 10px;
+  margin-right: 10px;
+  background-color: #2E2E5A; 
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+
+input:focus {
+  outline: none;
+  border: 2px solid #8D3Daf; 
+  box-shadow: 0 0 10px rgba(141, 61, 175, 0.5);
+}
+
+button {
+  padding: 14px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: #8D3Daf; 
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease; 
+}
+
+button:hover {
+  background-color: #7a359a;
+  box-shadow: 0 5px 15px rgba(141, 61, 175, 0.3);
+}
+
+.list {
+  text-align: left;
+  margin-top: 30px; 
+}
+
+.list ul {
+  padding-left: 0;
+}
+
+.list ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  background-color: #2E2E5A; 
+  color: #f1f1f1; 
+  margin-top: 15px;
+  list-style: none;
+  padding: 15px 20px;
+  font-size: 18px; 
+  font-weight: 500;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  word-break: break-word; 
+}
+
+.list ul li:hover {
+  background-color: #3b3b7a; 
+  transform: translateY(-2px);
+}
+
+span {
+  cursor: pointer;
+  font-size: 22px; 
+  color: #c4c4c4;
+  transition: color 0.3s ease;
+  margin-left: 15px;
+  font-size: 26px;
+}
+
+span:first-of-type {
+  margin-left: auto;
+}
+
+span:hover {
+  color: #FF6B6B; 
+}
+
+
+
+
+
+
+
