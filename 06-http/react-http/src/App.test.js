@@ -1,4 +1,4 @@
-import { render, screen } from '@testing-library/react';
+import { render, screen } from '../../../7_pizza-web-app/node_modules/@testing-library/react/types';
 import App from './App';
 
 test('renders learn react link', () => {
