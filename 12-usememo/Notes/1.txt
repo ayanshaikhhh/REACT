@@ -1,0 +1,71 @@
+React useMemo ek hook hai jo expensive calculations ko memoize karta hai — matlab React calculation ka result yaad rakh leta hai, taaki har render me fir se woh heavy calculation na chale.
+
+👉 Simple Definition
+
+useMemo = “Agar dependency same hai, to purana result return karo. Naya result tabhi banega jab dependency change hogi.”
+
+🔥 useMemo Syntax
+const memoValue = useMemo(() => {
+  // heavy calculation
+  return result;
+}, [dependencies]);
+
+🧠 useMemo Kab Use Karte Hai?
+
+✔️ Heavy calculation ho har render pe
+✔️ Filtering / Sorting large data
+✔️ Expensive loops
+✔️ Parent re-render ho raha ho but value change nahi ho rahi
+✔️ Child component unnecessary re-render ho raha ho
+
+🟢 Example 1: Heavy Calculation Optimize
+import { useState, useMemo } from "react";
+
+function App() {
+  const [count, setCount] = useState(0);
+
+  const expensiveCalculation = (num) => {
+    console.log("Calculating...");
+    for (let i = 0; i < 3000000000; i++) {}   // heavy loop
+    return num * 2;
+  };
+
+  const double = useMemo(() => expensiveCalculation(count), [count]);
+
+  return (
+    <div>
+      <h1>{double}</h1>
+      <button onClick={() => setCount(count + 1)}>Increase</button>
+    </div>
+  );
+}
+
+export default App;
+
+📝 Kya Hoga?
+
+Jab count change hoga tabhi loop chalega
+
+Otherwise React purana result use karega
+→ App fast chalegi.
+
+🟢 Example 2: Array Filter ko Memoize karna
+const filteredUsers = useMemo(() => {
+  return users.filter((u) => u.age > 20);
+}, [users]);
+
+🟢 Example 3: Child Component ko Optimize Karna
+const value = useMemo(() => compute(data), [data]);
+
+<Child value={value} />
+
+🚫 Kab useMemo Mat karna chahiye?
+
+❌ Chhoti calculation ki zarurat nahi
+❌ Har jagah useMemo lagana galat hai
+❌ useMemo se debugging mushkil ho jati hai
+❌ useMemo khud me thoda performance cost leta hai
+
+🎯 Simple Line Me
+
+useMemo = Performance optimization hook jo heavy calculation ko cache karta hai.

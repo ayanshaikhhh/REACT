@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 import { useState, useEffect } from 'react';
 
@@ -37,11 +37,19 @@ function App() {
 
 const handleTask = () => {
   const trimmed = input.trim();
-  if (!trimmed) return; // blank ignore
+  if (!trimmed) {
+    alert("Please enter a task")
+    return;
+  }  // blank ignore
+
+
 
   // duplicate check (case-insensitive)
   const exists = list.some(item => item.trim().toLowerCase() === trimmed.toLowerCase());
-  if (exists) return; // duplicate -> ignore
+  if (exists) {
+    alert("This task already exists!")
+    return;
+  } // duplicate -> ignore
 
   setList(prev => [...prev, trimmed]);
   setInput("");
@@ -49,21 +57,26 @@ const handleTask = () => {
 
 
 
+  const handleUpdate = () => {
+    const trimmed = input.trim();
+    if (!trimmed) {
+      alert("Please enter a task to update"); // <-- alert for blank update
+      return;
+    }
+    if (uid === null) return;
 
-const handleUpdate = () => {
-  const trimmed = input.trim();
-  if (!trimmed || uid === null) return;
+    // don't allow updating to a value that duplicates some other item
+    const exists = list.some((item, idx) => idx !== uid && item.trim().toLowerCase() === trimmed.toLowerCase());
+    if (exists) {
+      alert("This task already exists"); // optional
+      return; // would create duplicate -> ignore
+    }
 
-  // don't allow updating to a value that duplicates some other item
-  const exists = list.some((item, idx) => idx !== uid && item.trim().toLowerCase() === trimmed.toLowerCase());
-  if (exists) return; // would create duplicate -> ignore
-
-  setList(prev => prev.map((item, idx) => idx === uid ? trimmed : item));
-  setInput("");
-  setUid(null);
-  setUpdate(false);
-};
-
+    setList(prev => prev.map((item, idx) => idx === uid ? trimmed : item));
+    setInput("");
+    setUid(null);
+    setUpdate(false);
+  };
 
 
 
@@ -87,7 +100,7 @@ const handleUpdate = () => {
       <div className="container">
         <div className="input-box">
           <input type='text' value={input} onChange={handleInput} placeholder='Enter Task......'/>
-          {update ?   <button onClick={handleUpdate}>Update</button> : <button onClick={handleTask} disabled={!input.trim() || isDuplicate}>Add</button>}
+          {update ?   <button onClick={handleUpdate}>Update</button> : <button onClick={handleTask} disabled={isDuplicate}>Add</button>}
           {isDuplicate && <div style={{color:'red'}}>This is allready use</div>}
 
         </div>

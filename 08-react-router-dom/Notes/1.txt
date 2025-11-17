@@ -1,0 +1,99 @@
+React Router React apps me pages banane aur page-to-page navigation handle karne ke liye use hota hai. Ye Single Page Application (SPA) me bina page reload ke navigation provide karta hai.
+
+Main points simple Hindi-English me:
+
+⭐ React Router kya hota hai?
+
+React Router ek routing library hai jo React app me multiple pages jaisa experience deti hai — jaise:
+
+/home
+
+/about
+
+/contact
+
+/product/10 (dynamic route)
+
+Page change hoga lekin browser reload nahi hoga.
+
+⭐ React Router install kaise kare?
+npm install react-router-dom
+
+⭐ Basic setup (React Router v6)
+1️⃣ main.jsx me BrowserRouter wrap kro:
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import App from './App'
+import { BrowserRouter } from 'react-router-dom'
+
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>
+)
+
+⭐ 2️⃣ App.js me Routes banao:
+import { Routes, Route } from "react-router-dom";
+import Home from "./Home";
+import About from "./About";
+
+function App() {
+  return (
+    <>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
+    </>
+  );
+}
+
+export default App;
+
+⭐ 3️⃣ Navigation (Link use karna)
+import { Link } from "react-router-dom";
+
+function Navbar() {
+  return (
+    <>
+      <Link to="/">Home</Link>
+      <Link to="/about">About</Link>
+    </>
+  );
+}
+
+⭐ Dynamic Route Example
+Route:
+<Route path="/product/:id" element={<Product />} />
+
+Component:
+import { useParams } from "react-router-dom";
+
+function Product() {
+  const { id } = useParams();
+  return <h1>Product ID: {id}</h1>;
+}
+
+⭐ Programmatic Navigation (useNavigate)
+import { useNavigate } from "react-router-dom";
+
+function Login() {
+  const navigate = useNavigate();
+
+  const goToHome = () => {
+    navigate('/');
+  }
+
+  return (
+    <button onClick={goToHome}>Go Home</button>
+  );
+}
+
+⭐ Summary (Short)
+Feature	Meaning
+BrowserRouter	Routing enable karta hai
+Routes	Saare routes ko wrap karta hai
+Route	Ek specific page define karta hai
+Link	Navigation
+useParams()	Dynamic params read
+useNavigate()	Button se navigation
